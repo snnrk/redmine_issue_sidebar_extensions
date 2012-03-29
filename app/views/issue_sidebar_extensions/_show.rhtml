@@ -1,0 +1,7 @@
+<% wiki = @project.wiki %>
+<% unless wiki.nil? %>
+  <% page = wiki.find_page("#{RedmineIssueSidebarExtensions::ISSUE_SIDEBAR}") %>
+  <% unless page.nil? %>
+    <%= textilizable page.content_for_version(), :text %>
+  <% end %>
+<% end %>

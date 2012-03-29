@@ -1,2 +1,0 @@
-ja:
-  label_issue_sidebar_notfound: "#{RedmineIssueSidebarExtensions::ISSUE_SIDEBAR} が見つかりません"

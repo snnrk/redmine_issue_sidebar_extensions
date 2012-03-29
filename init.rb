@@ -1,9 +1,7 @@
 require 'redmine'
+require 'issue_sidebar_extensions'
 
-module RedmineIssueSidebarExtensions
-  ISSUE_SIDEBAR = "IssueSidebar"
-  require 'issue_sidebar_extensions'
-end
+RedmineIssueSidebarExtensions::ISSUE_SIDEBAR = "IssueSidebar"
 
 Redmine::Plugin.register :redmine_issue_sidebar_links do
   name 'Redmine issue sidebar links plugin'
